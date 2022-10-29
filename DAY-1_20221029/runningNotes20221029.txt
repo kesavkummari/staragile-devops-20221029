@@ -1,0 +1,44 @@
+Agenda :
+
+Module 1 - DevOps Essentials
+
+Topics: 
+•	Why DevOps? 
+•	What is DevOps? :
+    - DevOps combines development (Dev) and operations (Ops) to unite people, process, and technology in application planning, development, delivery, and operations.
+SDLC :
+•	Agile and DevOps :
+    - Key Values : 4 
+    - Principles : 12 
+        - Scrum Framework:
+    - https://www.atlassian.com/agile/scrum/ceremonies
+
+    - https://resources.scrumalliance.org/Article/key-values-principles-agile-manifesto
+
+
+•	DevOps Lifecycle :
+DevOps lifecycle is defined as a combination of different phases of 
+continuous software development, 
+integration, 
+testing, 
+delivery,
+deployment, 
+and 
+monitoring. 
+
+A competent DevOps lifecycle is necessary to build superior quality software through the system.
+
+•	DevOps Market Trends
+•	DevOps Delivery Pipeline 
+•	DevOps Ecosystem & Use Case
+•	Introduction to Virtualization
+•	Introduction to Cloud Computing
+
+Module 12 - AWS DevOps Services
+
+Topics:
+•	Why Cloud?
+•	Overview of AWS
+•	Overview of AWS DevOps 
+
+Q?

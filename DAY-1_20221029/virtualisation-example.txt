@@ -1,0 +1,56 @@
+
+# Virtualization Software : Oracle - virtualbox - V7.0 
+    - https://www.virtualbox.org/
+
+Windows :
+    - https://download.virtualbox.org/virtualbox/7.0.2/VirtualBox-7.0.2-154219-Win.exe
+    
+MacOS :
+    - https://download.virtualbox.org/virtualbox/7.0.2/VirtualBox-7.0.2-154219-OSX.dmg
+
+Note: Do not do customisation just install it 
+
+Linux Distributions : Kernel is being created by Linus Torvalds 
+
+1. Amazon Linux
+2. CentOS
+3. Debian
+4. Fedora
+5. Gentoo
+6. openSUSE
+7. Other Linux
+8. Red Hat
+9. SUSE Linux
+10. Ubuntu
+
+Distributions Are Two Types :
+    
+    - GUI + CUI/CLI : Desktop Edition 
+    
+    - CUI/CLI       : Server Edition 
+
+Download, Install & Configure Linux Distribution on Oracle Virtualbox :
+    - Download Linux Ubuntu 22.04 .ISO file --> Downloads 
+    - Configure in Virtualbox 
+    - Install it 
+    - Use it 
+https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview
+
+
+Baked OS Image: Ubuntu 
+    - https://www.osboxes.org/
+
+OS File :
+
+.VDI [ Desktop / Server Edition ]
+
+https://osboxes.org
+
+https://www.osboxes.org/virtualbox-images/
+
+https://www.osboxes.org/ubuntu/
+
+Username: osboxes Password: osboxes.org Gust Tools: Installed Keyboard Layout: US (Qwerty) VMware Compatibility: Version 10+
+
+https://sourceforge.net/projects/osboxes/files/v/vb/55-U-u/22.04/64bit.7z/download
+
