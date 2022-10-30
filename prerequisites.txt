@@ -1,0 +1,68 @@
+Notes Link :  GitHub : Repository : 
+    - https://github.com/kesavkummari/staragile-devops-20221029
+
+Video Link : 
+    - 
+
+WhatsApp Group :
+    - 
+qgSU9A!tUw?G%x&UEd$?pTw);)DoF)0V
+
+# --------------------------------------------------------------- #
+
+Prerequisites :
+    - Laptop or Desktop :
+        - Text / IDE Tool : Visual Studio Code [Open Source] 
+            - https://code.visualstudio.com/
+
+        - Git Bash : Open Source :
+            - https://git-scm.com/
+
+        - AWS CLI2 : Windows [ Open Source ] :
+            - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+        - Browser : Chrome [ Open Source ] 
+
+Local Lab :
+    - Oracle Virtualbox [ Open Source ] :
+        - https://www.virtualbox.org/
+    
+    - Download, Install & Configure Linux on Virtualbox :
+
+    - Baked OS by Downloading from osboxes.org & use it 
+
+Cloud Computing Lab : 
+    - Account AWS : https://aws.amazon.com/free 
+        -> 12 Months Free :
+            -> Compute :
+                -> EC2 :
+                    -> Windows and Linux Instances 
+
+Types Of Offers :
+    - Free trials
+    - 12 months free
+    - Always free
+
+Products : 200 Services [sub-services 1400+ ...]
+
+1. Analytics
+2. Application Integration
+3. Business Productivity
+4. Compute
+5. Containers
+6. Customer Engagement
+7. Database
+8. Developer tools
+9. End User Computing
+10. Front-End Web & Mobile
+11. Game Tech
+12. Internet of Things
+13. Machine Learning
+14. Management & Governance
+15. Media Services
+16. Migration & Transfer
+17. Networking & Content Delivery
+18. Robotics
+19. Security, Identity, & Compliance
+20. Serverless
+21. Storage

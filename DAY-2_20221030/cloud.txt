@@ -1,0 +1,141 @@
+Top Cloud Vendors?
+
+Amazon Web Services (AWS) : 2006
+Microsoft Azure : 2010
+Google Cloud : 2008
+Alibaba Cloud
+IBM Cloud
+Oracle
+Salesforce
+SAP
+Rackspace Cloud
+VMWare
+
+Cloud Computing?
+
+Simply put, cloud computing is the delivery of computing services—including servers, 
+storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, 
+flexible resources, and economies of scale.
+
+
+Root : 
+
+User, Group & Permissions :
+    - IAM users     : kesav | ***** | Permissions/Policies[Customer/Managed] 
+    - IAM Groups    : devops --> 1.kesav 2. ankur 3. arshad : Permissions/Policies[Customer/Managed] + Permissions/Policies[Customer/Managed] 
+    - IAM Roles
+    - IAM Policies
+
+Benefits of Cloud Computing?
+
+1. Cost 
+2. Global Scale 
+3. Performance
+4. Security
+5. Speed 
+6. Productivity
+7. Reliability
+
+Types of Clouds?
+
+1. Public  --> AWS, AZURE, GCP etc....
+2. Private --> On-premises Datacenter / Private Cloud --> UI []
+3. Hybrid --> Public and Private 
+
+Types Cloud Services?
+
+1. Infrastructure as a service (IaaS)
+2. Platform as a service (PaaS)
+3. Software as a service (SaaS)
+
+What is AWS?
+Amazon Web Services, Inc. is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs 
+to individuals, companies, and governments, on a metered pay-as-you-go basis.
+
+Create AWS Account for Personal/Professional : 
+
+Prerequisites :
+1. First Name  
+2. Last Name 
+3. Unique Email Id : 
+4. Desired UserName :
+5. Mobile No :
+6. Billing Address :
+7. Debit or Credit Card Details :
+
+Type of Users in AWS : 
+
+1. Root/Super : Who own the AWS account or Who created the AWS Account using his personal details 
+
+2. IAM : He is a Normal user part of AWS 
+
+AWS No Of Global Level Services : IAM, Route53 etc...
+
+AWS No Of Region Level Services : EC2, VPC etc..
+
+
+https://aws.amazon.com/about-aws/global-infrastructure/
+
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+
+
+
+Roles and Responsibilities of DevOps Engineer?
+1. Monitoring : NewRelic
+2. Incident Managment : ITSM Tool ( ServiceNow )
+3. System Analysis 
+4. Troubleshooting 
+5. Infrastructure Provisioning : AWS CF, Terraform, AZURE ARM T etc...
+6. Handling of Ad-hoc requests
+7. Build & Deployments
+8. CI/CD Pipelines
+9. Patch Activites
+10. Security Vulnerabilities 
+11. Automation : ShellScript, Powershell, DevOps Tools, Python etc..
+12. Documentation : Sharepoint, Confluence, Google Workspace 
+13. Cost Optimation 
+
+To Become DevOps Engineer?
+
+1. SDLC: Agile & Scrum 
+2. Administration & Networking : Windows & Linux 
+3. Scripting : ShellScripting / Powershell 
+4. Programming : Python   
+5. RDBMS / NoSQL : SQL 
+6. VCS / SCM : Git, GitHub
+7. CI : Jenkins 
+8. CB / CM : Jira, MS Teams,
+9. CSCA Tools : SonarQbue
+10. CBCR : Jfrog  
+11. CM Tools : Ansible 
+12. IaC : Terraform
+13. Containerise : Docker 
+14. Container / Cluster Orchestration  : Kuberenetes 
+15. CM : Nagios/CloudWatch & NewRelic 
+
+
+What is Agile?
+
+able to move quickly and easily.
+
+In software development, agile practices include requirements discovery and solutions improvement through the collaborative effort of self-organizing and cross-functional teams with their customer/end
+
+The Agile methodology is a way to manage a project by breaking it up into several phases. It involves constant collaboration with stakeholders and continuous improvement at every stage. Once the work begins, teams cycle through a process of planning, executing, and evaluating.
+
+Team:
+	Scrum team (DevOps team(Developer, SysAdmin, QA, DB Admin, Network engineer etc.. ))
+	Product owner
+	Scrum master
+
+Workflow:
+5.1	Sprint ( 2 weeks or 4 weeks )
+5.2	Sprint planning [ 60 minutes ]
+5.3	Daily scrum  [ 15 minutes ]
+5.4	Sprint review [ 60 minutes ]
+5.5	Sprint retrospective [ 60 minutes ]
+5.6	Backlog refinement [ 60 minutes ]
+5.7	End & Start a sprint [ 60 minutes ]
+
+
+

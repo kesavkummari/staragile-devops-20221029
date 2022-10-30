@@ -50,7 +50,7 @@ https://www.osboxes.org/virtualbox-images/
 
 https://www.osboxes.org/ubuntu/
 
-Username: osboxes Password: osboxes.org Gust Tools: Installed Keyboard Layout: US (Qwerty) VMware Compatibility: Version 10+
+Username: osboxes  Password: osboxes.org 
 
 https://sourceforge.net/projects/osboxes/files/v/vb/55-U-u/22.04/64bit.7z/download
 
