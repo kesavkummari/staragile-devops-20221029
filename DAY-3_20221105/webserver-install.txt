@@ -1,0 +1,66 @@
+Host A Website :
+
+Source Code : https://github.com/kesavkummari/kesavkummari-website-code.git
+
+Web Server - Windows IIS, Apache2, Nginx & Httpd
+
+OS : Linux 
+
+Distribution : Ubuntu 
+
+WebServer : Apache2 or Nginx
+
+STEP-1 : Go to Local lab or AWS Cloud & Launch a Linux Machine :
+
+AWS Launch Linux using GUI :
+
+Steps to launch an instance:
+
+Initiate instance launch
+Step 1: Choose an Amazon Machine Image (AMI)
+Step 2: Choose an Instance Type
+Step 3: Configure Instance Details
+Step 4: Add Storage
+Step 5: Add Tags
+Step 6: Configure Security Group
+Step 7: Review Instance Launch and Select Key Pair
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launching-instance.html
+
+AWS Launch Linux using CLI :
+
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html
+
+aws ec2 run-instances \
+    --image-id ami-0abcdef1234567890 \
+    --instance-type t2.micro \
+    --count 1 \
+    --subnet-id subnet-08fc749671b2d077c \
+    --key-name MyKeyPair \
+    --security-group-ids sg-0b0384b66d7d692f9
+
+aws ec2 run-instances \
+--image-id ami-08c40ec9ead489470 \
+--instance-type t2.micro \
+--count 1 \
+--subnet-id subnet-2db46060 \
+--security-group-ids sg-0d8d200bc6ab17c0d \
+--tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=web},{Key=Environment,Value=Development},{Key=ProjectName,Value=CloudBinary},{Key=ProjectID,Value=20221105},{Key=EmailID,Value=devops@cloudbnary.io},{Key=MobileNo,Value=+919908823070}]' \
+--key-name cloudbinary-keys \
+--user-data file://web-hostname.txt --profile devops 
+
+aws ec2 run-instances \
+--image-id ami-08c40ec9ead489470 \
+--instance-type t2.micro \
+--count 1 \
+--subnet-id subnet-2db46060 \
+--security-group-ids sg-0d8d200bc6ab17c0d \
+--tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=web},{Key=Environment,Value=Development},{Key=ProjectName,Value=CloudBinary},{Key=ProjectID,Value=20221105},{Key=EmailID,Value=devops@cloudbnary.io},{Key=MobileNo,Value=+919908823070}]' \
+--key-name cloudbinary-keys \
+--user-data file://web-hostname.txt
+
+
+
+

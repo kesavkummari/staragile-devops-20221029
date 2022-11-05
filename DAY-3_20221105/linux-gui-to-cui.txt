@@ -1,0 +1,29 @@
+
+# Temporary Switching From GUI TO CLI/CUI 
+
+UserName : osboxes 
+PassWord : osboxes.org 
+
+Open The Terminal : sudo su 
+PassWord : osboxes.org
+
+# init 3 For CLI/CUI 
+
+# init 5 For GUI+CUI/CLI 
+
+# init 0 : Poweroff 
+
+# init 6 : Reboot
+
+# Permanent configuration of Runlevels/Targets :
+
+Open The Terminal : sudo su 
+PassWord : osboxes.org
+
+# systemctl get-default
+
+# systemctl set-default multi-user.target 
+
+# init 3 For CLI/CUI 
+or 
+# init 6 : Reboot

@@ -1,0 +1,39 @@
+Agenda :
+
+OS Basics :
+
+- Basic & Advanced Commads 
+- File & Directory Mgmt
+- Permissions
+- User & Group Management
+- Package Management
+- Controlling Services & Daemons
+- Log Management
+- Process Management
+
+- Web Server - Windows IIS, Apache2, Nginx & Httpd
+- DB Server  : RDBMS (MySQL)
+- Application Server - Apache Tomcat
+
+
+Module 2 - Managing Source Code - Git and GitHub
+Topics:
+•	Overview of Version Control systems
+•	Central vs Distributed Control systems
+•	Introduction to Git
+•	Git file workflow
+•	Important Git Commands
+•	Branching and Merging, Stashing, Rebasing, Reverting and Resetting 
+•	Introduction to GitHub
+•	Using Git and GitHub together.
+
+Module 3 – Understanding and using Build tools
+Topics:
+•	Overview of Various Build tools
+•	What is Maven
+•	Maven Plugins
+•	Maven Archetypes
+•	Project Object Model (POM)
+•	Source Control Integration
+
+Q?

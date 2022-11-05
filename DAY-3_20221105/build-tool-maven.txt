@@ -1,0 +1,33 @@
+
+Maven Lifecycle: 
+
+Below is a representation of the default Maven lifecycle and its 8 steps: 
+
+Validate, 
+Compile, 
+Test, 
+Package, 
+Integration test, 
+Verify, 
+Install and 
+Deploy.
+
+STEP-1 : Go to Your Host machine & Install below softwares :
+
+1. git 
+
+2. java 
+
+3. maven 
+
+STEP-2 : Clone the repository :
+
+git clone https://github.com/kesavkummari/javacodescan.git
+
+STEP-3 : Open the Repo in VSCode 
+
+
+STEP-4 : Go to Source Code & Execute Maven Lifecycles:
+
+mvn clean validate compile test package verify install 
+
