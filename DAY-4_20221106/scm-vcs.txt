@@ -1,0 +1,109 @@
+
+Source Control Management / Version Control System / Source Code Management :
+
+Two Solutions :
+
+CLI/CUI : git 
+
+CLI/CUI SCM/VCS :  Git [ Linus Torvalds --> 2005 & Linux Kernel ] --> Ubuntu, Debian, RHEL, CentOS, etc...
+
+GUI :  GitHub, GitLab, BitBucket, AWS CodeCommit, & Azure Repos [ Web-based Git repository hosting service ]
+
+    1. GitHub : 
+        - git + GUI 
+    
+    2. GitLab :
+        - git + GUI 
+    
+    3. BitBucket
+        - git + GUI 
+
+    4. AWS CodeCommit
+        - git + GUI 
+    
+    5. Azure Repos 
+        - git + GUI 
+
+Public & Private Repositories
+
+GitHub, GitLab, BitBucket 
+
+Private Repositories :
+
+AWS CodeCommit & Azure Repos
+
+# ----------------------------------------------------------------- #
+
+Source Control Management / Version Control System / Source Code Management :
+
+CLI : git 
+
+GUI Vendors : 
+
+Public & Private Repositories
+    1. github 
+    2. gitlab 
+    3. bitbucket 
+
+Private Repositories
+    4. aws codecommit  
+    5. azure repos 
+
+CLI/CUI SCM/VCS :  Git [ Linus Torvalds --> 2005 & Linux Kernel ] --> Ubuntu, Debian, RHEL, CentOS, etc...
+
+GUI SCM/VCS : GitHub, GitLab, BitBucket, AWS CodeCommit & Azure Repos
+
+Software development teams to collaborate communicate in order to
+quickly solve problems and deliver new features.
+
+What we store : Source Code / Raw Code
+
+Create a secure repository to store and share your code.
+
+What we do : Public & Private Repositories
+
+GitHub, GitLab, BitBucket [ Web-based Git repository hosting service ]
+
+Private Repositories :
+
+AWS CodeCommit & Azure Repos  [ Web-based Git repository hosting service ]
+
+Distributed Version Control System :
+
+Source Control Management / Source Code Management / Version Control System : 
+
+GIT : Software [ CLI/CUI  ] Public & Private Repositories
+
+Git is a distributed revision control system with an emphasis on speed data integrity and support for distributed non-linear workflows.
+Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005 and has since become the most widely 
+adopted version control system for software development.
+
+GITHUB : [ WEB-BASED | GUI ] | Public & Private Repositories
+GitHub is a web-based Git repository hosting service which offers all of the distributed revision control and source code management 
+(SCM) functionality of Git as well as adding its own features. 
+
+Unlike Git which is strictly a command-line tool GitHub provides a web-based graphical interface and desktop as well as
+ mobile integration. GitHub offers both commercial plans and free accounts.
+
+GITLAB SCM : [ WEB-BASED | GUI ] | Public & Private Repositories
+GitLab's SCM (source code management) solution supports software development teams to collaborate communicate in order to 
+quickly solve problems and deliver new features. GitLab offers both commercial plans and free accounts.
+
+ATLASSIAN BITBUCKET : [ WEB-BASED | GUI ] | Public & Private Repositories
+Bitbucket is a web-based hosting service for projects that use either the Mercurial (since launch) or 
+Git (since October 2011[1]) revision control systems. Bitbucket offers both commercial plans and free accounts.
+
+AWS CodeCommit : [ WEB-BASED | GUI ] | Private Repositories
+    - Create a secure repository to store and share your code.
+
+Azure Repos : [ WEB-BASED | GUI ] | Private Repositories
+
+
+https://education.github.com/git-cheat-sheet-education.pdf
+
+https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+
+https://about.gitlab.com/images/press/git-cheat-sheet.pdf
+
+https://ndpsoftware.com/git-cheatsheet.html#loc=index;
+
