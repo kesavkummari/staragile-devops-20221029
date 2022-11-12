@@ -1,0 +1,10 @@
+
+Jenkins :
+
+Jenkinsfile :
+    - Declarative :
+    
+    - Scripted
+
+- Pipeline are DSLs [1] to describe portions of your software delivery pipeline. 
+Scripted Pipeline is written in a limited form of Groovy syntax.

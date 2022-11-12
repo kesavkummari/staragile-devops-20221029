@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <profiles>
+    <profile>
+      <id>default</id>
+      <repositories>
+        <repository>
+          <id>example-repo-local</id>
+          <name>example-repo-local</name>
+            <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>default</activeProfile>
+  </activeProfiles>
+  <servers>
+    <server>
+      <id>example-repo-local</id>
+      <username>admin</username>
+      <password>Azure@123456</password>
+    </server>
+  </servers>
+</settings>

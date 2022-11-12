@@ -1,0 +1,44 @@
+Agenda :
+
+https://github.com/kesavkummari/javacodescan
+
+Module 5 - Continuous Integration using Jenkins [Completed]
+Topics: 
+•	Overview of Continuous Integration
+•	Overview of Jenkins 
+•	Jenkins architecture
+•	Installing and Configuring Jenkins
+•	Jenkins Management
+•	Jenkins Build Pipeline
+
+Practical’s to be covered: 
+•	Installing and configuring Jenkins
+•	Creating a build using Jenkins
+•	Integrating with Jenkins
+•	Working with Jenkins Pipelines
+
+Module 4 - Containerization basics using Docker [Pending Topics]
+Topics: 
+•	What and Why of Containers
+•	Difference between VMs and Containers
+•	Docker Architecture and Components
+•	Image Distribution using Docker Hub
+•	Working with Containers and Docker Hub
+
+Module 7 - Docker Commands and Use-cases
+Topics:
+•	Docker Files
+•	Docker Compose
+•	Docker Networking
+•	Docker Swarm
+
+Practical’s to be covered: 
+•	Building Images using Docker File
+•	Creating multi-containers using Docker Compose
+•	Creating User-Defined Networks
+•	Working with Docker Swarm
+
+
+Q?
+
+git clone https://github.com/kesavkummari/javacodescan.git

@@ -27,13 +27,14 @@ source /etc/environment
 # Go to /opt directory to download Apache Tomcat 
 cd /opt/
 
-wget https://downloads.apache.org/tomcat/tomcat-10/v10.1.1/bin/apache-tomcat-10.1.1.tar.gz
+# Download Apache Tomcat - Application
+sudo wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.83/bin/apache-tomcat-8.5.83.tar.gz
 
 # Extract the Tomcat File
-sudo tar xvzf apache-tomcat-10.1.1.tar.gz
+sudo tar xvzf apache-tomcat-8.5.83.tar.gz
 
 # Rename the Tomcat Folder
-sudo mv apache-tomcat-10.1.1 tomcat
+sudo mv apache-tomcat-8.5.83 tomcat
 
 # Go Inside the Tomcat Folder
 cd /opt/tomcat/
@@ -63,9 +64,9 @@ cd /opt/tomcat/bin/
 # http://ipaddress:8080
 
 # Create a Dedicated user for Sonarqube
-sudo adduser --system --no-create-home --group --disabled-login tomcat 
+#sudo adduser --system --no-create-home --group --disabled-login tomcat 
 
-sudo chown -R tomcat:tomcat /opt/tomcat 
+#sudo chown -R tomcat:tomcat /opt/tomcat 
 
 # To Restart SSM Agent on Ubuntu 
 sudo systemctl restart snap.amazon-ssm-agent.amazon-ssm-agent.service

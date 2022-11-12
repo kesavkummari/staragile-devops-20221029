@@ -1,5 +1,5 @@
 
-Maven Lifecycle: 
+Maven Lifecycle:  https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
 
 Below is a representation of the default Maven lifecycle and its 8 steps: 
 
