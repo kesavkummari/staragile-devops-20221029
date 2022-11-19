@@ -1,0 +1,117 @@
+K8s Cluster :
+    - Deployment
+    - Service Deployment
+    - Replication
+    - Cleanup
+
+Kubernetes :
+    - node1 : k8s-control-plane ---> Cluster 
+    - node2
+    - node3
+
+Application : k8s Cluster ---> Nodes i.e. Node1 ---> POD ---> Container i.e. Nginx
+
+STEP-1 : Provision 3 Linux Servers 
+
+Pre-requisites :
+1. 2 Core Processor 
+2. 2 GB Ram 
+3. 50 GB Hard Disk 
+
+STEP-2 : Download, Install & Configure required softwares
+
+1. Setup Hostname : k8s-controller-plane.cloudbinary.io
+2. Download, Install & Configure Utility Softwares : git curl unizp tree wget
+3. Install Containerization Technology : docker.io 
+4. Enable Docker For Ubuntu User 
+5. Change cgroup driver to systemd
+6. Enable Docker Services at boot level
+7. Download, & Install Kubernetes Dependencies :  apt-transport-https ca-certificates
+8. Download Kubernetes GPG Signature Key: apt-key.gpg 
+9. Download & Install kubelet, kubeadm and kubectl
+10. Hold Auto updates on kubelet, kubeadm and kubectl
+11. Restart SSM Agent on EC2 Instance
+12. Attach Instance profile To EC2 Instance 
+
+STEP-3 : Connect EC2 Instance using SSM and Validate STEP-2
+
+STEP-4 : Create Kubernetes Cluster by going to k8s-controller-plane
+
+Update the Host Files for 3 Servers :
+
+vi /etc/hosts
+# K8s Node-1 K8s Controller-Plane 
+172.31.40.184 k8s-controller-plane.cloudbinary.io
+
+# K8s Node-2 
+172.31.34.208 k8s-node1.cloudbinary.io
+
+# K8s Node-3
+172.31.34.208 k8s-node1.cloudbinary.io
+
+## Below are the validation Commands :
+
+kubeadm version
+kubectl version
+kubelet --version
+containerd --version
+docker images
+docker ps
+ls -lrt /etc/docker/daemon.json
+cat /etc/docker/daemon.json
+cat /etc/apt/sources.list.d/kubernetes.list
+systemctl status docker
+systemctl status kubelet
+
+STEP-5 : Create kubernetes Cluster by doing SSH to k8s-controller-plane.cloudbinary.io
+
+sudo kubeadm init --pod-network-cidr=10.10.0.0/16
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 172.31.88.73:6443 --token genbcf.p12ha6mj69dd50pq \
+        --discovery-token-ca-cert-hash sha256:9a855fa71917bc8b8e8f5d112cdc87f98399e58362ef9b9449c4a91d130d8676
+
+STEP-6 : To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+STEP-7 : Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+STEP-8 : You should now deploy a pod network to the cluster:
+
+kubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml
+OR
+curl https://projectcalico.docs.tigera.io/manifests/calico.yaml -O
+
+kubectl apply -f calico.yaml
+
+STEP-9 : You can now join any number of control-plane nodes by copying certificate authorities
+and service account keys on each node and then running the following as root:
+
+STEP-10 : Then you can join any number of worker nodes by running the following on each as root:
+
+## Join Nodes To Cluster As Root User :
+
+STEP-11 : Validate the Cluster Info :
+
+$ kubectl cluster-info
+
+Viewing, Finding Resources :
+
+$ kubectl get services                          # List all services in the namespace
+$ kubectl get pods --all-namespaces             # List all pods in all namespaces
+$ kubectl get pods -o wide                      # List all pods in the namespace, with more details
+$ kubectl get rc <rc-name>                      # List a particular replication controller
+$ kubectl get replicationcontroller <rc-name>   # List a particular RC
+
+
+STEP-12 : Join the Node To the Cluster :
+kubeadm join 172.31.88.73:6443 --token genbcf.p12ha6mj69dd50pq \
+        --discovery-token-ca-cert-hash sha256:9a855fa71917bc8b8e8f5d112cdc87f98399e58362ef9b9449c4a91d130d8676
+
+kubeadm join 172.31.88.73:6443 --token genbcf.p12ha6mj69dd50pq --discovery-token-ca-cert-hash sha256:9a855fa71917bc8b8e8f5d112cdc87f98399e58362ef9b9449c4a91d130d8676

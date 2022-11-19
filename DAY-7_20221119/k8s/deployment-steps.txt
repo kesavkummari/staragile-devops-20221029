@@ -1,0 +1,34 @@
+STEP-1 :  Create deployment.yml
+
+File Name : deployment.yml
+
+STEP-2 : Create Service and Deploy:
+
+File Name : nginx-service.yaml
+
+kubectl create service nodeport nginx --tcp=80:80
+
+kubectl apply -f deployment.yml
+
+clusterip:31490
+nodeip:31490
+
+3.95.208.252:31490
+3.87.73.71:31490
+
+STEP-3 : Update the deployment with new version
+
+File Name : deployment-update.yaml
+
+kubectl apply -f deployment-update.yaml
+
+STEP-4 : Scale the deployment
+
+File Name : deployment-scale.yaml
+
+kubectl apply -f  deployment-scale.yaml 
+
+STEP-5 : Deleting a deployment 
+
+kubectl delete deployment nginx-deployment
+

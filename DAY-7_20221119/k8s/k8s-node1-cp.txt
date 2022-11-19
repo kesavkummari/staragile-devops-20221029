@@ -1,0 +1,88 @@
+
+# Setup Hostname 
+sudo hostnamectl set-hostname "k8s-node1-cp.cloudbinary.io"
+
+# Configure Hostname unto hosts file 
+echo "`hostname -I | awk '{ print $1}'` `hostname`" >> /etc/hosts 
+
+# Disable swap & add kernel settings
+sudo swapoff -a
+sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+
+# Load the following kernel modules on all the nodes
+
+echo "overlay" >> /etc/modules-load.d/containerd.conf
+echo "br_netfilter" >> /etc/modules-load.d/containerd.conf
+
+sudo modprobe overlay
+sudo modprobe br_netfilter
+
+# Set the following Kernel parameters for Kubernetes, run beneath tee command
+
+echo "net.bridge.bridge-nf-call-ip6tables = 1" >> /etc/sysctl.d/kubernetes.conf
+echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/kubernetes.conf
+echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.d/kubernetes.conf
+
+# Reload the above changes, run
+sudo sysctl --system
+
+# Install containerd run time [ containerd ]
+sudo apt-get install -y curl software-properties-common apt-transport-https ca-certificates
+
+# Enable docker repository
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+
+# Now, run following apt command to install containerd
+sudo apt-get update
+sudo apt-get install -y containerd.io
+
+# Configure containerd so that it starts using systemd as cgroup.
+
+containerd config default | sudo tee /etc/containerd/config.toml >/dev/null 2>&1
+
+sudo sed -i 's/SystemdCgroup \= false/SystemdCgroup \= true/g' /etc/containerd/config.toml
+
+# Restart and enable containerd service
+
+sudo systemctl restart containerd
+sudo systemctl enable containerd
+
+# Add apt repository for Kubernetes
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+
+sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+
+# Note: At time of writing this guide, Xenial is the latest Kubernetes repository but when repository is available for Ubuntu 22.04 (Jammy Jellyfish) then you need replace xenial word with ‘jammy’ in ‘apt-add-repository’ command.
+
+# Install Kubernetes components Kubectl, kubeadm & kubelet
+
+sudo apt-get update
+
+sudo apt-get install -y kubelet kubeadm kubectl
+
+sudo apt-mark hold kubelet kubeadm kubectl
+
+# 
+kubeadm init --pod-network-cidr=10.10.0.0/16
+
+su - ubuntu
+
+export KUBECONFIG=/etc/kubernetes/admin.conf
+
+curl https://projectcalico.docs.tigera.io/manifests/calico.yaml -O
+
+kubectl apply -f calico.yaml
+
+kubectl cluster-info
+
+kubectl get services
+
+kubectl get pods --all-namespaces
+
+
+
+
+

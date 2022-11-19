@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kksite-deployment
+spec:
+  selector:
+    matchLabels:
+      app: kksite 
+  template:
+    metadata:
+      labels:
+        app: kksite
+    spec:
+      containers:
+      - name: kksite
+        image: kesavkummari/kesavkummariwebsite:1.0.0
+        ports:
+        - containerPort: 80

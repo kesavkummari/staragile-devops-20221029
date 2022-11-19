@@ -1,0 +1,10 @@
+Agenda :
+
+Kubernetes 
+
+Ansible 
+
+Q?
+
+
+# kubectl run nginx --image=nginx -n mywebsite 
