@@ -1,0 +1,9 @@
+# Creating User In Linux 
+--- 
+- name: Play-1  [User Creation in Linux] 
+  hosts: node1
+  become: true
+  tasks:
+  - name: Add the User 'kesav'
+    ansible.builtin.user:
+      name: kesav

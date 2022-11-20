@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Setup New Hostname
+hostnamectl set-hostname "ansible-node1.cloudbinary.io"
+
+# Configure New Hostname as part of /etc/hosts file 
+echo "`hostname -I | awk '{ print $1}'` `hostname`" >> /etc/hosts
+
+# Update the Repository
+sudo apt-get update
+
+# To Restart SSM Agent on Ubuntu 
+sudo systemctl restart snap.amazon-ssm-agent.amazon-ssm-agent.service
+
+# Attach Instance profile To EC2 Instance 
+# aws ec2 associate-iam-instance-profile --iam-instance-profile Name=SA-EC2-SSM --instance-id ""

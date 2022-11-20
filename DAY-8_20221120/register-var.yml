@@ -1,0 +1,16 @@
+---
+- name: Register a Variable 
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Find a File in a Folder
+    ansible.builtin.shell: "find ec2-node1.sh"
+    args:
+      chdir: "/Users/ck/gitdemo/staragile-devops-20221029/DAY-8_20221120/"
+    register: find_hosts_ouput
+
+  - name: Use the Above Tasks output as a variable to this task 
+    ansible.builtin.debug:
+      var: find_hosts_output 
+
+...

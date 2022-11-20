@@ -1,0 +1,48 @@
+HTML : Website Designing  
+XML  : Store and Process Data 
+JSON : Store and Process Data 
+YAML : Store and Process Data 
+# YAML Stands for Ain't Markup Laguage 
+
+Scalar Types :
+  - Integer
+  - Strings 
+  - Boolean
+  - Time 
+
+Collection Types :
+  - Array
+  - List
+
+Indentation  :
+
+# Store YAML file in : .yaml or yml 
+
+YAML Advantages:
+Lightweight
+It is very easy and simple to represent the complex mapping
+Human friendly readable and writable
+Simple to modify with any text editor
+Suitable for configuration settings
+Support for major programming languages
+
+# Comments :
+
+1. Inline or single line comments  
+2. Block-Level or Multiple-line comments 
+
+# 
+
+VSCODE : MAcOS : Command+/
+
+Windows : VSCode : Ctrl+/
+
+Atom:
+ctrl+/ win and linux 
+cmd+/ mac 
+
+--- Opening Syntax
+
+
+
+... Closing Syntax 

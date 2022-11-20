@@ -1,0 +1,22 @@
+Agenda :
+
+
+Configuration Management :
+    - Ansible :
+    https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html
+    
+        adhoc-commands  :
+        playbooks  :
+        roles
+
+Monitoring :
+    - Nagios 
+
+Q?
+
+Example : AWS or Host Machine :
+
+Create A Folder : 
+    - GUI 
+    - CLI Commands
+        - Scripts 

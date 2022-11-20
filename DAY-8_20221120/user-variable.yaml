@@ -1,0 +1,20 @@
+# Creating User In Linux 
+--- 
+- name: Play-1  [User Creation in Linux] & [Install a WebServer]
+  hosts: node1
+  become: true
+  vars:
+    state: latest
+    user: joel
+
+  tasks:
+  - name: Add the User
+    ansible.builtin.user:
+      name: "{{ user }}"
+
+  - name: Install Nginx WebServer 
+    ansible.builtin.apt:
+      name: "nginx"
+      state: "{{ state }}"
+      
+...
