@@ -1,0 +1,55 @@
+Agenda :
+
+Module 9 - Configuration Management using Chef [Completed]
+Topics:
+•	Chef Fundamentals
+•	Chef Architecture & Components – Server, Workstation and Nodes 
+•	Chef Resources
+•	Recipes and Cookbooks
+•	Chef Resources 
+•	Using AWS OpsWorks
+
+Practical’s to be covered: 
+•	Creating Stack using AWS OpsWorks
+
+Module 11 - Continuous Monitoring using Nagios [Completed]
+Topics: 
+•	Introduction to Nagios
+•	Nagios Plugins
+•	Nagios Objects
+•	Nagios Commands & Nagios Notifications
+
+Practicals to be covered: 
+•	Installing Nagios
+•	Monitoring different servers using Nagios
+
+Execute the following command in your terminal session:
+curl https://assets.nagios.com/downloads/nagiosxi/install.sh | sh
+
+
+
+Module 12 - AWS DevOps Services
+Topics:
+•	Why Cloud?
+•	Overview of AWS
+•	Overview of AWS DevOps 
+•	Introduction to CodeCommit, CodeBuild, CodeDeploy and CodePipeline 
+•	Working with CloudFormation & Terraform
+
+ Practicals & Demo to be covered:  
+•	Working with Code Commit & Deploy an application using CodePipeline, 
+•	Working with CloudFormation & Terraform
+
+
+svc-devops-at-191323423716
+Y6Gm8qSJmfJ6yCO0MWvNC8xvht/UlGdM3d6WN1OVaDs=
+
+to fix add the following git configuration
+git config --global credential.helper "!aws codecommit credential-helper $@"
+git config --global credential.UseHttpPath true
+
+check if git has system credential.helper by typing 
+git config --system -l
+
+if it has remove it by typing
+git config --system --unset credential.helper
