@@ -1,0 +1,31 @@
+STEP-1 : Download, Install & Configure Packer on Windows
+
+Latest :
+https://releases.hashicorp.com/packer/1.8.4/packer_1.8.4_windows_amd64.zip
+
+STEP-2 : Unzip the Packer Software 
+
+unzip packer_1.8.4_windows_amd64.zip
+
+File : packer.exe
+
+STEP-3 : Copy Packer file unto C:/Program Files/ 
+
+By Creating a Folder i.e. Packer
+
+Copy Packer file(i.e. packer.exe) from downloads to C:/Program Files/Packer/packer.exe
+
+STEP-4 : Setup Environment Variable for Packer
+
+Start-->System-->Advanced System Settings-->Environment Variables-->System variables-->Select & Click on Edit "path"
+
+C:/Program Files/Packer/
+
+Note: Repeat Above step for User Variables
+Start-->System-->Advanced System Settings-->Environment Variables-->User variables-->Select & Click on Edit "path"
+
+C:/Program Files/Packer/
+
+STEP-5 : Close all the CMD/PowerShell/Gitbash and restart your PC and open CMD/PowerShell/Gitbash & Varify the packer version 
+
+

@@ -1,0 +1,31 @@
+version: "3"
+services:
+  node:
+    image: USER/Your-Pre-Built-Image
+    environment:
+      - VIRTUAL_HOST=localhost
+    volumes:
+      - logs:/app/out/
+    command: ["npm","start"]
+    cap_drop:
+      - NET_ADMIN
+      - SYS_ADMIN
+    deploy:
+      resources:
+        limits:
+          cpus: '0.001'
+          memory: 50M
+        reservations:
+          cpus: '0.0001'
+          memory: 20M
+
+volumes:
+  - logs
+
+networks:
+  default:
+    driver: overlay
+
+
+
+

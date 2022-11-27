@@ -1,0 +1,48 @@
+https://www.terraform.io/
+
+Download Older versions of Terraform :
+
+https://releases.hashicorp.com/terraform/
+
+Latest :
+https://www.terraform.io/downloads.html
+
+MacOS :
+https://releases.hashicorp.com/terraform/1.1.4/terraform_1.1.4_darwin_arm64.zip
+
+Windows :
+https://releases.hashicorp.com/terraform/1.1.4/terraform_1.1.4_windows_amd64.zip
+
+
+STEP-1 : Download, Install & Configure Terraform on Windows
+
+Latest :
+https://releases.hashicorp.com/terraform/1.1.0/terraform_1.1.0_windows_amd64.zip
+
+Older Versions :
+https://releases.hashicorp.com/terraform/
+
+STEP-2 : Unzip the Terraform Software 
+
+unzip terraform_1.1.0_windows_amd64.zip
+
+File : terraform.exe
+
+STEP-3 : Copy Terraform file unto C:/Program Files/ 
+
+By Creating a Folder i.e. Terraform
+
+Copy terraform file(i.e. terraform.exe) from downloads to C:/Program Files/Terraform/terraform.exe
+
+STEP-4 : Setup Environment Variable for Terraform
+
+Start-->System-->Advanced System Settings-->Environment Variables-->System variables-->Select & Click on Edit "path"
+
+C:/Program Files/Terraform/
+
+Note: Repeat Above step for User Variables
+Start-->System-->Advanced System Settings-->Environment Variables-->User variables-->Select & Click on Edit "path"
+
+C:/Program Files/Terraform/
+
+STEP-5 : Close all the CMD/PowerShell/Gitbash and restart your PC and open CMD/PowerShell/Gitbash & Varify the terraform version 
